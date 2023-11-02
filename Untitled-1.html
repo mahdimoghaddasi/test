@@ -1,19 +1,83 @@
 <!DOCTYPE html>
 <html>
 <title>about me</title>
+
 <head>
-<style>
+    <style>
+        * {
+            margin: 13px;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background-color: #060606;
+        }
 
+        .container {
+            width: 1536px;
+            margin: 0 auto;
+        }
 
-    
-</style>
+        .one {
+            display: flex;
+            align-items: center;
+            gap: 29px;
+        }
+
+        .mask_text {
+            color: white;
+            font-size: 100px;
+            font-family: YekanBakh;
+            line-height: 100px;
+            font-weight: 1000px;
+            text-transform: uppercase;
+            background: url(./jonas-avatar.jpg) 0 0 / cover no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        @font-face {
+            font-family: YekanBakh;
+            font-style: normal;
+            font-weight: 400;
+            src: url("./Anton-Regular.ttf") format("truetype"),
+        }
+
+        h4 {
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .about {}
+    </style>
 </head>
+
 <body>
 
+    <div class="container">
+        <h4>ABOUT</h4>
+        <div class="one">
+            <div>
+                <img src="./jonas-avatar.jpg" alt="a man" width="700" height="500">
+            </div>
+            <div class="head text">
+                <h1 class="mask_text "> i'm </br>David </br>smith</h1>
+                <!-- <img src="./jonas-avatar.jpg" alt="a man"> -->
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="image">
 
+            <img src="./christian-buehner-DItYlc26zVI-unsplash.jpg" alt="second" width="380" height="270">
 
-    
+        </div>
+        <!--  -->
+    </div>
 </body>
-</html>
 
+</html>
