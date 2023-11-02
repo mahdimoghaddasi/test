@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<title>about me</title>
+<title>about me(DAVID SMITH)</title>
 
 <head>
     <style>
         * {
-            margin: 13px;
+            margin: 12px;
             padding: 0;
             box-sizing: border-box;
         }
@@ -52,7 +52,49 @@
             text-align: center;
         }
 
-        .about {}
+        .about {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .tales {
+            height: 400px;
+            width: 600px;
+        }
+
+        .button {
+            background-color: red;
+            border: none;
+            color: red;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.6s;
+            cursor: pointer;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .button1 {
+            background-color: red;
+            color: black;
+            border: 2px solid #f44336;
+        }
+
+        .button1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .head {
+            text-align: center;
+            color: azure;
+            font-size: 50px;
+            font-family: YekanBakh;
+        }
     </style>
 </head>
 
@@ -70,14 +112,33 @@
             </div>
         </div>
     </div>
-    <div class="about">
+    <div class="about"> <!-- the main element-->
         <div class="image">
-
-            <img src="./christian-buehner-DItYlc26zVI-unsplash.jpg" alt="second" width="380" height="270">
-
+            <img class="image2" src="./christian-buehner-DItYlc26zVI-unsplash.jpg" alt="second" width="380"
+                height="270">
         </div>
-        <!--  -->
+        <div class="tales">
+            <h1 style="color: aliceblue;">ABOUT ME</h1>
+            <p style="color: aliceblue;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. </br>Phasellus imperdiet, nulla et dictum
+                interdum,</br>
+                nisi lorem
+                egestas odio, vitae scelerisque enim ligula venenatis dolor.</br> Maecenas nisl est, ultrices nec congue
+                eget, auctor vitae
+                massa.</br>Fusce luctus vestibulum augue ut aliquet.</br> Mauris ante ligula, facilisis sed ornare eu,
+                lobortis
+                in odio.</br> Praesent
+                convallis urna a lacus interdum </br>ut hendrerit risus congue. Nunc sagittis dictum nisi,</br> sed
+                ullamcorper
+                ipsum dignissim
+                ac...
+            </p>
+            <button class="button button1">Red link</button>
+            <button class="button button1">another red link</button>
+        </div>
+
     </div>
+    <h1 class="eudcation head">EDUCATION</h1>
 </body>
 
 </html>
