@@ -65,11 +65,9 @@
 
         .button {
             background-color: red;
-            border: none;
             color: red;
             padding: 16px 32px;
             text-align: center;
-            text-decoration: none;
             font-size: 16px;
             margin: 4px 2px;
             transition-duration: 0.6s;
@@ -95,6 +93,79 @@
             font-size: 50px;
             font-family: YekanBakh;
         }
+
+        .education {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 17px;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            width: calc(50%);
+        }
+
+        .li-1 {
+            color: darkgray;
+            font-size: 55px;
+        }
+
+        .circle {
+            border-radius: 50%;
+            width: 13px;
+            height: 13px;
+            border: 2px;
+            border-color: aliceblue;
+            border-style: solid;
+            background-color: #060606;
+        }
+
+        .vertical {
+            height: 700px;
+            width: 2px;
+            background-color: darkgray;
+            position: absolute;
+
+            transform: translateX(-50%);
+            top: 0px;
+        }
+
+        .list:nth-child(odd) {
+            justify-content: flex-start;
+            align-self: flex-start;
+            flex-direction: row-reverse;
+            transform: translateX(5px);
+        }
+
+        .list:nth-child(even) {
+            justify-content: flex-end;
+            align-self: flex-end;
+
+            transform: translateX(-9px);
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: right;
+            align-items: end;
+            width: 1200px;
+            align-items: center;
+        }
     </style>
 </head>
 
@@ -119,6 +190,11 @@
         </div>
         <div class="tales">
             <h1 style="color: aliceblue;">ABOUT ME</h1>
+            <div class="flex-row">
+
+                <div style="height: 1px; width: 100px; background-color: white;"></div>
+                <p style="color: #f44336;padding: 0;margin: 0px !important;">who am i</p>
+            </div>
             <p style="color: aliceblue;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. </br>Phasellus imperdiet, nulla et dictum
                 interdum,</br>
@@ -133,12 +209,79 @@
                 ipsum dignissim
                 ac...
             </p>
-            <button class="button button1">Red link</button>
-            <button class="button button1">another red link</button>
+            <button class="button button1">download link</button>
+            <button class="button button1">hire link</button>
         </div>
 
     </div>
-    <h1 class="eudcation head">EDUCATION</h1>
+    <!-- education container----------------------------------->
+    <section class="education">
+        <h1 class="eudcation head">EDUCATION</h1>
+        <div class="flex-row">
+            <div style="height: 1px; width: 130px; background-color: white;"></div>
+            <p style="color: #f44336;padding: 0;margin: 0px !important;">learning</p>
+        </div>
+
+        <div class="timeline">
+            <div class="vertical"></div>
+            <div class="list">
+                <div class="circle"><!--circle--></div>
+                <div class="li-1">2004</div>
+                <div>
+                    <h3 style="color: aliceblue; margin: 0;">diploma in UI/UX desgin </br><i>New York</i></h3>
+                    <p style="color: aliceblue;">Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipiscing
+                        elit.</br>Lorem
+                        ipsum
+                        dolor sit amet, consectetur Lorem </br>ipsum dolor sit amet,consectetur.
+                    </p>
+                </div>
+            </div>
+            <div class="list">
+                <div class="circle"><!--circle--></div>
+                <div class="li-1">2006</div>
+                <div>
+                    <h3 style="color: aliceblue;direction: rtl;">diploma web design </br><i>New York</i></h3>
+                    <p style="color: aliceblue;direction: rtl;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</br>Lorem
+                        ipsum
+                        dolor sit amet, consectetur Lorem </br>ipsum dolor sit amet,consectetur.
+                    </p>
+                </div>
+            </div>
+            <div class="list">
+                <div class="circle"><!--circle--></div>
+                <div class="li-1">2008</div>
+                <div>
+                    <h3 style="color: aliceblue;">diploma in UI/UX desgin </br><i>New York</i></h3>
+                    <p style="color: aliceblue;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</br>Lorem
+                        ipsum
+                        dolor sit amet, consectetur Lorem </br>ipsum dolor sit amet,consectetur.
+                    </p>
+                </div>
+            </div>
+            <div class="list">
+                <div class="circle"><!--circle--></div>
+                <div class="li-1">2010</div>
+                <div>
+                    <h3 style="color: aliceblue;direction: rtl;">diploma web design </br><i>New York</i></h3>
+                    <p style="color: aliceblue;direction: rtl;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</br>Lorem
+                        ipsum
+                        dolor sit amet, consectetur Lorem </br>ipsum dolor sit amet,consectetur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+
+    </div>
+    <!-- -->
+    <!-- -->
 </body>
 
 </html>
